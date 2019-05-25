@@ -2,18 +2,18 @@
 
 ## Introdução
 
-React é uma biblioteca que surgiu em 2011, pelo Facebook.
-React é uma biblioteca javascript, ou seja é uma coleção de funcionalidades relacionadas que podem ser chamadas pelo desenvolver para resolver problmeas específicos - a criação de interfaces de usúario reaproveitáveis.
-Diferente de um framework que diga o que (e como) algo deve ser feito.
-Toda construção é efetuada com javascript. existe uma similaridade entre a definição de estilos com css e a definição de seus elementos com html, entretanto, toda a construção do mesmo é efetuada em javascript.
-Flux e Redux maneiras de pensar o desenvolvimento.
+<p>React é uma biblioteca que surgiu em 2011, pelo Facebook.</p>
+<p>React é uma biblioteca javascript, ou seja é uma coleção de funcionalidades relacionadas que podem ser chamadas pelo desenvolver para resolver problmeas específicos - a criação de interfaces de usúario reaproveitáveis.</p>
+<p>Diferente de um framework que diga o que (e como) algo deve ser feito.</p>
+<p>Toda construção é efetuada com javascript. existe uma similaridade entre a definição de estilos com css e a definição de seus elementos com html, entretanto, toda a construção do mesmo é efetuada em javascript.</p>
+<p>Flux e Redux maneiras de pensar o desenvolvimento.</p>
 
 ### react (DOM) vs react native
 
-O que o react em si faz, basicamente ele fala como a interface é organiza em uma estrutura de memoria e como será gerenciado eventos na interface.
-Você tem então o react para web (DOM) ele irá pegar essa interface essa estrutura que foi declara e irá colocar ele para web, enquanto o react native irá pegar essa interface e irá colocar (converte) para aplicações mobile.
-Então o que é o legal do react, no momento que você aprende a manipular a interface e organizar e trabalhar seus eventos, você consegue fazer isso tanto para web quanto para mobile, a diferença basicamente será o componente que será chamado exemplo, para apresentar um texto no react native você utiliza o elemento `<Text></Text>` enquanto para web você irá utilizar um elemento `<p></p>`.
- O maior objetivo dele é implantar o conceito de uma plataforma learn-once run-anywhere (aprenda uma vez e execute em qualquer lugar), isto é, uma vez aprendidos os conceitos do React, os mesmos podem ser transcritos para qualquer linguagem de programação, tal como funciona com a lógica de programação.
+<p>O que o react em si faz, basicamente ele fala como a interface é organiza em uma estrutura de memoria e como será gerenciado eventos na interface.</p>
+<p>Você tem então o react para web (DOM) ele irá pegar essa interface essa estrutura que foi declara e irá colocar ele para web, enquanto o react native irá pegar essa interface e irá colocar (converte) para aplicações mobile.</p>
+<p>Então o que é o legal do react, no momento que você aprende a manipular a interface e organizar e trabalhar seus eventos, você consegue fazer isso tanto para web quanto para mobile, a diferença basicamente será o componente que será chamado exemplo, para apresentar um texto no react native você utiliza o elemento `<Text></Text>` enquanto para web você irá utilizar um elemento `<p></p>`.</p>
+<p>O maior objetivo dele é implantar o conceito de uma plataforma learn-once run-anywhere (aprenda uma vez e execute em qualquer lugar), isto é, uma vez aprendidos os conceitos do React, os mesmos podem ser transcritos para qualquer linguagem de programação, tal como funciona com a lógica de programação.</p>
 
  ````jsx harmony
  class ShoppingList extends React.Component {
@@ -60,8 +60,8 @@ Então o que é o legal do react, no momento que você aprende a manipular a int
 * xamarin (miscrosft, C#, ddl curva de aprendizado)
   * vue-native
 
-(Web View, ele é um navegador, sem a barra de busca)
-(Ele utiliza uma biblioteca para renderização de componentes, e usando ela ele joga componentes nativos (brigth))
+<p>(Web View, ele é um navegador, sem a barra de busca)
+(Ele utiliza uma biblioteca para renderização de componentes, e usando ela ele joga componentes nativos (brigth))</p>
 
 ## Prática
 
@@ -120,20 +120,20 @@ AppRegistry.registerComponent(appName, () => App);
 
 ### JSX
 
-React é uma biblioteca javascript que permite criar interfaces para aplicações web.
-O Jsx é uma forma de representar objetos na forma de componentes, sendo sua apresentação semelhante a tags HTML, não é obrigatório o seu uso, entretanto, utiliza-la é muito benefica.
+<p>React é uma biblioteca javascript que permite criar interfaces para aplicações web.</p>
+<p>O Jsx é uma forma de representar objetos na forma de componentes, sendo sua apresentação semelhante a tags HTML, não é obrigatório o seu uso, entretanto, utiliza-la é muito benefica.</p>
 
 ````jsx harmony
 <Text>Esse é um objeto criado apartir do JSX</Text>
 ````
 
 * Babel é o responsável por transpilar o codigo em JSX para javascript e também os recursos utilizado do EcmaScrpit 6 e as novas especificações, para as versões suportadas do javascript.
-https://babeljs.io/
-https://udgwebdev.com/frontend-lindo-usando-babel-para-rodar-es6/
+* https://babeljs.io/
+* https://udgwebdev.com/frontend-lindo-usando-babel-para-rodar-es6/
 
 ### Estilizando a aplicação (CSS)
 
-Para a estilização de componentes o react-native trabalha com uma abstração similiar a css, entretanto, como já foi dito, react trabalha somente com js, não existindo a separação de css, html e js. 
+<p>Para a estilização de componentes o react-native trabalha com uma abstração similiar a css, entretanto, como já foi dito, react trabalha somente com js, não existindo a separação de css, html e js.</p> 
 
 #### Declarando:
 ````jsx harmony
@@ -159,7 +159,6 @@ const styles = StyleSheet.create({
   <Text style={[styles.title, this.props.isActive && styles.activeTitle]} />
 </View>
 ````
-bla bla bla bla
 
 ##### Flex
 * JustifyContent: aplica alinhamento no conteudo de um container (View) verticalmente
@@ -211,111 +210,110 @@ class AlteraTexto extends Component {
 }
 AppRegistry.registerComponent('AlteraTexto', () => AlteraTexto);
 ````
-### Aplicação alvo
 
-Explicar aplicação prints fotos e motagem do app, explicar o que cada tela faz, component e etc
+### utilizando gif
+
+* https://facebook.github.io/react-native/docs/image.html
+  * Adicionar no arquivo `android/app/build.gradle`
+  * implementation 'com.facebook.fresco:animated-gif:1.10.0'
 
 
-### Utilizando Gif
+### Utilizando musicas no app
 
-https://github.com/facebook/react-native/issues/18866
+* https://www.npmjs.com/package/react-native-sound
+  * npm install react-native-sound --save
+  * react-native link react-native-sound
 
-I'm using RN0.56.
-compile 'com.facebook.fresco:animated-base-support:1.9.0'
-compile 'com.facebook.fresco:animated-gif:1.9.0'
-This worked well.
+### Navegação entre cenas utilizando o react-Nativagation
 
-Refer
-https://facebook.github.io/react-native/docs/0.56/image.html#gif-and-webp-support-on-android and replace 0.56 with your RN version to find out which fresco version to go with.
+<p> React nativagation atualmente é o modelo atual para navegação entre cenas</p>
+<p>Exemplo: (https://alligator.io/react/react-native-navigation/</p>
 
-### Utilizando Musica
+* Instalando:
 
-https://www.npmjs.com/package/react-native-sound
-
-### Navegação entre cenas, navigator, Router-Flux, React-Nativagation
-
-#### Navigator
-
-* Componente antigo de navegação
-
-````text
-npm install --save react-native-deprecated-custom-components
-````
-* initialRoute -> rota inicial da aplicação
-* renderScene(route, navigator) -> responsável por renderizar as novas cenas atraves do retorne,
- route, traz o id da rota nova, navigator component
- * navigador é enviado por pros para um component (cena)
- * navigator .push() chama uma nova cena apartir do id
- 
-````jsx harmony
-<TouchableHighlight onPress={() => {this.props.navigator.push({id: 'cena1'})}}>
-    <Text>Alterar Cena</Text>
-</TouchableHighlight>
-````
- * navigador .pop() desempilha a cena
- 
-````jsx harmony
-<Navigator 
-    initialRoute={{id : 'cena1'}}
-    renderScene={
-        (route, navigator) => {
-            if (route.id === 'cena1') {
-                return(<Cena1 navigator={navigator}/>)
-            }
-            if (route.id === 'cena2') {
-                return(<Cena2 navigator={navigator} />)
-            }
-           
-    
-}
-AppRegistry.registerComponent('atmconsultoria', () => AtmConsultoria);
-````
-### ROUTER FLUX
-
-* Instalar (v3.38.0) => (4.0.6)
-````
-npm install --save react-native-router-flux
-````
-````jsx harmony
- <Router>
-    <Stack key="root">
-      <Scene key="login" component={Login} title="Login"/>
-      <Scene key="register" component={Register} title="Register"/>
-      <Scene key="home" component={Home}/>
-    </Stack>
-  </Router>
-  ````
-
-### REACT NATIVE NAVIGATION
-
+````shell
 npm install --save react-navigation
 npm install --save react-native-gesture-handler
 react-native link react-native-gesture-handler
+````
+
+* Criando o componente navigation
+````jsx harmony
+import {createStackNavigator, createAppContainer} from 'react-navigation';
+import Home from './Home';
+import Music from "./Music";
+
+const navigation = createStackNavigator(
+    {
+        Home: {screen: Home},
+        Music: {screen: Music},
+    },
+    {
+        initialRouteName: "Home"
+    }
+);
+
+const AppNavigator = createAppContainer(navigation);
+
+export default AppNavigator;
+````
+
+* Adicionando o mesmo no App, sendo adicionado a classe principal do app
+````jsx harmony
+import React from 'react';
+import AppNavigator from './src/AppNavigator';
+
+export default class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return (
+            <AppNavigator />
+        );
+    }
+}
+````
+
+* Criando metodos e variaveis que comunicam-se entre as cenas
+````jsx harmony
+import React from 'react';
+import AppNavigator from './src/AppNavigator';
+
+export default class App extends React.Component {
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            music: 'babyshark.mp3',
+        }
+    }
+
+    changeMusic = (music) => {
+        this.setState({music: music});
+    };
+
+    render() {
+        return (
+            <AppNavigator
+                screenProps={{
+                    music: this.state.music,
+                    changeMusic: this.changeMusic,
+                }}
+            />
+        );
+    }
+}
+
+````
 
 ### CLIENT HTTP
 
+<p>Forma de se comunicar com aplicações externas</p>
+
+````shell
 npm install --save babel-preset-es2015
 npm install --save babel-preset-react
 npm install --save axios
-
-## PROBLEMAS
-
-### Problemas para gerar sombras 
-* https://ethercreative.github.io/react-native-shadow-generator/
-* propriedades de shadow somente para ios
-* para android deve ser utilizado elevation ou uma biblioteca de terceiro
-```
- containerStyle: {
-        margin: 5,
-        borderBottomWidth: 0,
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 2 },
-         shadowOpacity: 0.8,
-         shadowRadius: 2,
-        elevation: 1,
-         marginLeft: 5,
-         marginRight: 5,
-        marginTop: 10,
-    }
-```
-
+````

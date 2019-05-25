@@ -8,7 +8,7 @@ export default class Music extends React.Component {
     constructor(props) {
         super(props);
         this.state = {list: []}
-        this.serveradress = "http://192.168.0.165:3000";
+        this.serveradress = "https://mini-curso-react-native-unesc.firebaseapp.com";
     }
 
     componentWillMount() {
